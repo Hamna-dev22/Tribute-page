@@ -1,0 +1,87 @@
+
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #f9f9f9;
+                    color: #333;
+                    line-height: 1.6;
+                    overflow-x: hidden;
+                }
+                .container {
+                    max-width: 800px;
+                    margin: 50px auto;
+                    padding: 20px;
+                    background: #fff;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    animation: fadeIn 2s ease-in-out;
+                    text-align: center;
+                }
+                h1 {
+                    text-align: center;
+                    color: #4CAF50;
+                    animation: slideIn 1.5s ease-in-out;
+                }
+                .highlight {
+                    color: #e91e63;
+                    font-weight: bold;
+                }
+                p {
+                    margin: 10px 0;
+                    animation: fadeUp 1s ease-in-out;
+                }
+                .quote {
+                    font-style: italic;
+                    color: #555;
+                    text-align: center;
+                    margin: 20px 0;
+                    animation: zoomIn 1.5s ease-in-out;
+                }
+                .image-container {
+                    margin: 20px 0;
+                    animation: zoomIn 1.5s ease-in-out;
+                }
+                .image-container img {
+                    max-width: 100px;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                }
+                @keyframes fadeIn {
+                    from {
+                        opacity: 0;
+                    }
+                    to {
+                        opacity: 1;
+                    }
+                }
+                @keyframes slideIn {
+                    from {
+                        transform: translateY(-50px);
+                        opacity: 0;
+                    }
+                    to {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+                @keyframes fadeUp {
+                    from {
+                        transform: translateY(20px);
+                        opacity: 0;
+                    }
+                    to {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+                @keyframes zoomIn {
+                    from {
+                        transform: scale(0.8);
+                        opacity: 0;
+                    }
+                    to {
+                        transform: scale(1);
+                        opacity: 1;
+                    }
+                }
